@@ -5,3 +5,33 @@
 		color: #4300fc;
 	}
 }
+.Comment {
+display: flex;
+flex-direction: column;
+gap: 15px;
+	&__Container {
+		display: flex;
+		justify-content: flex-start;
+		width: 333px;
+		border: 1px dashed #000;
+		padding: 10px;
+		border-radius: 10px;
+		margin-left: 20px;
+		gap: 30px;
+	}
+	&__Text {
+		width: 200px;
+	}
+	&__ButtonDelete {
+		border: none;
+		border-radius: 10px;
+		padding: 10px 20px;
+		background-color: #000;
+		color: #fff;
+		transition: all 0.1s linear;
+	}
+	&__ButtonDelete:hover {
+		opacity: 0.6;
+		cursor: pointer;
+	}
+}

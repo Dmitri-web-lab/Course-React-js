@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+.App__Title {
+  border-bottom: 1px solid #4300fc;
+  color: #4300fc;
+}
+
+.Comment {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.Comment__Container {
+  display: flex;
+  justify-content: flex-start;
+  width: 333px;
+  border: 1px dashed #000;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  gap: 30px;
+}
+.Comment__Text {
+  width: 200px;
+}
+.Comment__ButtonDelete {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.1s linear;
+}
+.Comment__ButtonDelete:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}/*# sourceMappingURL=App.css.map */
