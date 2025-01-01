@@ -35,4 +35,17 @@
 .Comment__ButtonDelete:hover {
   opacity: 0.6;
   cursor: pointer;
+}
+
+.routeContainer {
+  padding-bottom: 50px;
+}
+
+.marginElement {
+  padding-bottom: 50px;
+}
+
+.noStyledLink {
+  text-decoration: none;
+  color: #fff;
 }/*# sourceMappingURL=App.css.map */

@@ -1,12 +1,15 @@
 import './App.scss';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CommentsList from './components/CommentsList';
 import Message from './components/Message';
 import TemperatureConverter from './components/TemperatureConverter';
 import TodoList from './components/TodoList';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
+import { Provider } from 'react-redux';
+import HomeSwitchTheme from './components/HomeSwitchTheme';
+import HomeStore from './components/HomeStore';
 
 function App() {
 	return (
@@ -24,6 +27,9 @@ function App() {
 					</Routes>
 				</div>
 			</Router>
+			<Provider store={HomeStore}>
+				<HomeSwitchTheme />
+			</Provider>
 		</div>
 	);
 }
